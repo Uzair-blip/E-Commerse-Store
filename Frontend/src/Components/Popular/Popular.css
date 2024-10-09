@@ -1,0 +1,54 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
+  .popular-item {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .popular-item .item {
+    flex: 0 1 calc(25% - 30px); /* four items per row, subtracting the gap */
+    box-sizing: border-box;
+  }
+  
+  hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .popular {
+      padding: 20px;
+    }
+  
+    .popular h1 {
+      font-size: 30px;
+    }
+  
+    .popular-item {
+      gap: 10px; /* Reduce gap on small screens */
+    }
+  
+    .popular-item .item {
+      flex: 0 1 calc(50% - 10px); /* Adjust gap for smaller screens */
+    }
+  }
+  

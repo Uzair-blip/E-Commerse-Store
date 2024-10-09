@@ -1,0 +1,138 @@
+.product-display{
+    display: flex;
+    margin: 0 170px;
+    font-family: 'Poppins', sans-serif;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.product-display-main-img{
+    margin-top: 30px;
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.product-display-right{
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.product-display-right-stars{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.product-display-right-price{
+    display: flex;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.product-display-right-price-old {
+    text-decoration: line-through;
+    color: #818181;
+    margin-right: 20px;
+
+}   
+.product-display-right-price-new{
+    color: #ff4141;
+}
+.product-display-right .product-name {
+    font-size: 40px;
+    color: #3d3d3d;   
+    font-weight: 700;
+}
+.product-display-right-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+.product-display-right-button{
+    padding: 20px;
+    width: 30%;
+    background: #ff4141;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+margin: 30px;
+border-radius: 30px;
+
+    
+}
+
+.product-display-right-category{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3d3d3d;
+}
+
+.product-display-right-category span{
+    color: #ff4141;
+}
+.product-right-size h1{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-right-size-list{
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+
+}
+.product-right-size-list div{
+    padding: 18px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;    
+}
+.product-right-size-list div:hover{
+background-color: #3d3d3d;
+color: white;   
+
+}
+
+@media (max-width:480px) {
+    .product-display{
+    flex-direction: column; 
+    margin: 0 20px;
+    }
+    .product-display-main-img{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+    .product-display-right{
+        margin: 0 20px;
+    }
+    .product-display-right-price{
+        font-size: 18px;
+    }
+    .product-display-right-price-old{
+        font-size: 16px;
+    }
+    .product-display-right-price-new{
+        font-size: 18px;
+    }   
+    .product-display-right-button{
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 20%;
+    }
+    .product-display-right-category{
+        font-size: 16px;
+    }
+    .product-display-right .product-name {
+        font-size: 30px;
+    }    
+
+}
