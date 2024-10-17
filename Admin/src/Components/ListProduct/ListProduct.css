@@ -1,0 +1,63 @@
+.listproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;  /* Optional: Set a max-width for the container */
+    padding: 10px 15px;
+    margin: 30px auto;  /* Center the container horizontally */
+    border-radius: 6px;
+    background: white;
+    height: 100vh;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;  /* Center text under the respective headers */
+}
+
+.listproduct-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.listproduct-format {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center; /* Align items vertically */
+    font-weight: 500;
+    text-align: center; /* Center text under product name, prices, etc. */
+}
+
+.listproduct-allproducts {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    padding-bottom: 20px;  /* Prevent content from touching the bottom */
+}
+
+.listproduct-allproducts hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;  /* Lighter border for a clean divider */
+}
+
+.listproduct-remove {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 auto;  /* Center the remove icon */
+}
